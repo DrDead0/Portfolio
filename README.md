@@ -8,7 +8,7 @@ It also includes a contact me form for easy communication.
 
 ## Demo
 
-Check out the live version of my portfolio [here](https://hardikverma22.github.io/Portfolio/).
+Check out the live version of my portfolio [here]().
 
 ## Technologies Used
 
@@ -33,7 +33,7 @@ To run the Shoe Forge locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/hardikverma22/shoe-forge.git
+   t
    ```
 
 2. Navigate to the project directory:
@@ -66,7 +66,7 @@ To run the Shoe Forge locally, follow these steps:
   5. Submit a pull request to the main branch of the original repository.
 
 ## Contact Me
-Feel free to reach out to me through the contact form on my portfolio website or via email at hardikverma22@gmail.com.
+Feel free to reach out to me through the contact form on my portfolio website or via email at ashishchaurasiya128@gmail.com.
 I look forward to hear from you!
 
 
