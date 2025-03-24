@@ -33,7 +33,7 @@ To run the Shoe Forge locally, follow these steps:
 1. Clone the repository:
 
    ```
-   t
+   https://github.com/DrDead0/Portfolio.git
    ```
 
 2. Navigate to the project directory:
