@@ -29,7 +29,7 @@ module.exports = {
             to:{height:"var(--radix-according-content-height)"},
           }
         },
-        "a"
+        
       },
     },
     plugins: [],
