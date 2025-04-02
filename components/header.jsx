@@ -1,7 +1,7 @@
 // import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
-import Nav from './ui/nav'
+import Nav from './nav'
 
 //components
 const Header =()=>{
