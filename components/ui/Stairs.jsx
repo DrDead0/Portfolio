@@ -14,8 +14,8 @@ const stairAnimation ={
 }
 const Stairs =()=>{
     return(
-        {/* render 6 motion divs , each representing a step of the stairs */}
-    )
+        {/* render 6 motion divs , each representing a step of the stairs  */}
+    ) 
 }   
 export default Stairs;
 
