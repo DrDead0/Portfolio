@@ -2,7 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import PageTransitionEvent from "@/components/PagesTransition";
-
+import StairTransition from "@/components/ui/stairTransition";
 
 //components
 const jetBrainsMono = JetBrains_Mono({
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning>
         <Header />
         <PageTransitionEvent>
+          <StairTransition />
         {children}
         </PageTransitionEvent>
         
