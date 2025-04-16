@@ -1,6 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import PageTransitionEvent from "@/components/PagesTransition";
 
 
 //components
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
         className={`${jetBrainsMono.variable} antialiased`}
         suppressHydrationWarning>
         <Header />
+        <PageTransitionEvent>
         {children}
+        </PageTransitionEvent>
+        
 
       </body>
     </html>
