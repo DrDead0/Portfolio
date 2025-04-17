@@ -1,4 +1,5 @@
 "use client";
+import contact from "@/app/contact/page";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 
@@ -19,6 +20,10 @@ const links =[
         name:'work',
         path:'/work'
     },
+    {
+        name: 'contact',
+        path: '/contact'
+    }
 ]
 const Nav =()=>{
     const pathname = usePathname();
