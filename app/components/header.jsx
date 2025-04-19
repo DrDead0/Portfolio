@@ -16,15 +16,15 @@ const Header = () => {
             className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
                 Game & Backend Developer Based in India</h1>
                 <p className="max-w-2xl mx-auto font-Ovo">
-                    I am a Game & Backend Developer From Uttar Pradesh, India doing Multiple Things 
-                    Like Game Development, Backend Development, and also System Designer.
-                </p>
+                    I am a Game & Backend Developer From Uttar Pradesh, India doing Multiple Things Like Game Development, 
+                    Backend Development, and also Open Source Contributor.
+                    </p>
                 <div className=" flex flex-col sm:flex-row items-center gap-4 mt-4">
                     <a href="#contact"
                     className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2"
                     >Contact Me <Image src={assets.right_arrow_white} alt="RightArrow" className="w-4"/></a>
                     <a href="/sample-resume.pdf " download className='px-10 py-3 border rounded-full border-gray-500 flex item-center gap-2'>
-                    My Resume <Image src={assets.download_icon} alt="DownloadIcon" className="w-4"/></a>
+                    My Resume <Image src={assets.download_icon} width={20} height={20} alt="DownloadIcon" className="object-contain" /></a>
                 </div>
         </div>
     )
