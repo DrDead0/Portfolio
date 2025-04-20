@@ -7,6 +7,15 @@
   font-family: Outfit;
 }
 
+/* Remove problematic rules */
+.bg-\[url\(\)\] {
+  display: none;
+}
+
+.bg-\[url\(\`\`\)\] {
+  display: none;
+}
+
 
 
 
