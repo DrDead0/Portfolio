@@ -36,7 +36,11 @@ const Work = () => {
                     </div>
                 ))}
             </div>
-            <a href="">Show More<Image src={assets.right_arrow_bold} alt='Right Arrow'
+            <a
+            className="w-max flex items-center justify-center gap-2 
+            text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto
+            my-20 hover:bg-lightHover hover:-translate-y-1 transition-all duration-300
+            hover:shadow-[4px_4px_#000]" href="">Show More<Image src={assets.right_arrow_bold} alt='Right Arrow'
             className='w-4'/>
 
             </a>
