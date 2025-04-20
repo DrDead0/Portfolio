@@ -6,6 +6,7 @@ import About from "./components/about.jsx";
 import Services from "./components/services.jsx";
 import Work from "./components/work.jsx";
 import Contact from "./components/contact.jsx";
+import Footer from "./components/footer.jsx";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <Services/>
       <Work/>
       <Contact/>
+      <Footer/>
     </>
   );
 }

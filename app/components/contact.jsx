@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Contact = () => {
+    // web3 from has been used to send email to the user
+    // and to change email address visit that website and generate a key and paste it in access_key
+
     const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
