@@ -78,63 +78,91 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Backend',
+        description: 'Social Media Backend',
         bgImage: '/work-1.png',
+        link: 'https://github.com/DrDead0/Nodejs-Express_SocialMedia_Backend.git'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Task Manager',
+        description: 'Chrome Extension',
         bgImage: '/work-2.png',
+        link: 'https://github.com/DrDead0/Task-Manager_Chrome-Extension.git'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Digital Dynasty',
+        description: '2D Platformer Game',
         bgImage: '/work-3.png',
+        link: 'https://github.com/DrDead0/Digital-Dynasty_Unity-Engine.git'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Urban Eye',
+        description: 'Camera Surveillance Application',
         bgImage: '/work-4.png',
+        link: 'https://github.com/DrDead0/urbaneyes.git'
     },
     {
-        title: 'Game Development',
-        description: 'Unity Game',
+        title: 'G-Orbit',
+        description: 'Gamers Community Platform',
         bgImage: '/work-1.png',
+        link: 'https://github.com/DrDead0/G-Orbit_Gaming-Community.git'
     },
     {
-        title: 'Backend API',
-        description: 'REST API',
+        title: 'DarkDeity Bot',
+        description: 'Automated Discord Bot',
         bgImage: '/work-2.png',
+        link: 'https://github.com/DrDead0/DarkDeity_Bot.git'
     },
     {
-        title: 'Database Design',
-        description: 'SQL Database',
+        title: 'CaptainDeity Bot',
+        description: 'Automated Discord Moderation Bot',
         bgImage: '/work-3.png',
+        link: 'https://github.com/DrDead0/Captain-Deity_Bot.git'
     },
     {
-        title: 'Cloud Project',
-        description: 'Cloud Services',
+        title: 'Blender Models',
+        description: 'My Blender Collection',
         bgImage: '/work-4.png',
+        link: 'https://github.com/DrDead0/Blender-Models.git'
     }
 ];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    { 
+        icon: assets.web_icon, 
+        title: 'Game Development', 
+        description: 'Developing engaging games using Unity and Unreal Engine, focusing on gameplay mechanics and player experience...', 
+        link: 'https://docs.unity3d.com/Manual/index.html' 
+    },
+    { 
+        icon: assets.mobile_icon, 
+        title: 'Backend Development', 
+        description: 'Creating scalable backend systems with Node.js, handling API development and database management...', 
+        link: 'https://nodejs.org/en/docs/' 
+    },
+    { 
+        icon: assets.ui_icon, 
+        title: 'Game Level Design & Content Creation', 
+        description: 'Designing immersive game levels and creating engaging content for interactive experiences...', 
+        link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
+    },
+    { 
+        icon: assets.graphics_icon, 
+        title: 'Open Source Contributions', 
+        description: 'Contributing to open-source projects, sharing knowledge, and collaborating with developers...', 
+        link: 'https://opensource.guide/' 
+    },
+];
 
 export const infoList = [
     { 
         icon: assets.code_icon, 
         iconDark: assets.code_icon_dark, 
         title: 'Tech Stack', 
-        description: 'Programming: JavaScript, TypeScript, Python, C++, C#, C\nWeb: HTML, CSS, SQL\nGame: Unity, Godot, Unreal Engine' 
+        description: 'Game Dev: Unity, Unreal Engine, C#, C++\nBackend: Node.js, Express, MongoDB\nWeb: JavaScript, TypeScript, React' 
     },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: '8+ completed projects including games and web applications' }
 ];
 
 export const toolsData = [
