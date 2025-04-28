@@ -97,7 +97,27 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
-]
+    {
+        title: 'Game Development',
+        description: 'Unity Game',
+        bgImage: '/work-1.png',
+    },
+    {
+        title: 'Backend API',
+        description: 'REST API',
+        bgImage: '/work-2.png',
+    },
+    {
+        title: 'Database Design',
+        description: 'SQL Database',
+        bgImage: '/work-3.png',
+    },
+    {
+        title: 'Cloud Project',
+        description: 'Cloud Services',
+        bgImage: '/work-4.png',
+    }
+];
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
@@ -107,7 +127,12 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages ', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { 
+        icon: assets.code_icon, 
+        iconDark: assets.code_icon_dark, 
+        title: 'Tech Stack', 
+        description: 'Programming: JavaScript, TypeScript, Python, C++, C#, C\nWeb: HTML, CSS, SQL\nGame: Unity, Godot, Unreal Engine' 
+    },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
