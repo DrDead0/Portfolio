@@ -12,7 +12,7 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "Portfolio - Ashish Chaurasiya",
+  title: "Ashish Chaurasiya",
   description: "Game & Backend Developer From Uttar Pradesh, India doing Multiple Things Like Game Development, Backend Development, and also Open Source Contributor.",
 };
 
