@@ -97,7 +97,7 @@ export const workData = [
     },
     {
         title: 'Urban Eye',
-        description: 'Camera Surveillance Application',
+        description: 'Camera Geolocation Application',
         bgImage: '/work-4.png',
         link: 'https://github.com/DrDead0/urbaneyes.git'
     },
