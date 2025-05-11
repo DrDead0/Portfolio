@@ -104,25 +104,25 @@ export const workData = [
     {
         title: 'G-Orbit',
         description: 'Gamers Community Platform',
-        bgImage: '/work-1.png',
+        bgImage: '/work-5.png',
         link: 'https://github.com/DrDead0/G-Orbit_Gaming-Community.git'
     },
     {
         title: 'DarkDeity Bot',
         description: 'Automated Discord Bot',
-        bgImage: '/work-2.png',
+        bgImage: '/work-6.png',
         link: 'https://github.com/DrDead0/DarkDeity_Bot.git'
     },
     {
         title: 'CaptainDeity Bot',
         description: 'Automated Discord Moderation Bot',
-        bgImage: '/work-3.png',
+        bgImage: '/work-7.png',
         link: 'https://github.com/DrDead0/Captain-Deity_Bot.git'
     },
     {
         title: 'Blender Models',
         description: 'My Blender Collection',
-        bgImage: '/work-4.png',
+        bgImage: '/work-8.png',
         link: 'https://github.com/DrDead0/Blender-Models.git'
     }
 ];
