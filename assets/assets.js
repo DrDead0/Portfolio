@@ -39,6 +39,13 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import Backend from './Backend.png'
 import level_design from './Level_design.png';
 import open_source from './open_source.png';
+import unreal_engine from './unreal_engine.png';
+import unity from  './unity.png';
+// import postman from '';
+// import sql from '';
+// import blender from '';
+// import photoshop from '';
+
 
 export const assets = {
     user_image,
@@ -81,7 +88,9 @@ export const assets = {
     game_dev,
     open_source,
     level_design,
-    Backend
+    Backend,
+    unreal_engine,
+    unity
 };
 
 export const workData = [
@@ -174,5 +183,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.unreal_engine, assets.unity, assets.vscode, assets.figma, assets.git, assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
