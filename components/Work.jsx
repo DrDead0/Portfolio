@@ -40,26 +40,34 @@ const Work = ({isDarkMode}) => {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.9, duration: 0.6 }}
-    className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10 gap-5 dark:text-black'>
+    className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10 gap-6 dark:text-black'>
         {displayedProjects.map((project, index)=>(
             <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02, y: -5 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden'
-            style={{
-                backgroundImage: `url(${project.bgImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}
+            className='aspect-square rounded-xl relative cursor-pointer group overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg hover:shadow-xl'
             onClick={() => window.open(project.link, '_blank')}>
-                <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-                    <div>
-                        <h2 className='font-semibold'>{project.title}</h2>
-                        <p className='text-sm text-gray-700'>{project.description}</p>
+                <div className='relative w-full h-full'>
+                    <Image 
+                        src={project.bgImage} 
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className='object-cover object-center transform group-hover:scale-110 transition-transform duration-500'
+                        quality={100}
+                        priority={index < 4}
+                        loading={index < 4 ? "eager" : "lazy"}
+                    />
+                    <div className='absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300'></div>
+                </div>
+                <div className='bg-white/95 backdrop-blur-sm w-11/12 rounded-lg absolute bottom-4 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between duration-500 group-hover:bottom-6 shadow-lg'>
+                    <div className='flex-1 mr-2'>
+                        <h2 className='font-semibold text-gray-800'>{project.title}</h2>
+                        <p className='text-sm text-gray-600 line-clamp-2'>{project.description}</p>
                     </div>
-                    <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5'/>
+                    <div className='border rounded-full border-gray-800 w-8 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition-colors duration-300 flex-shrink-0'>
+                        <Image src={assets.send_icon} alt='send icon' className='w-4'/>
                     </div>
                 </div>
             </motion.div>

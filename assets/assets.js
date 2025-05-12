@@ -28,6 +28,7 @@ import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
 import web_icon from './web-icon.png';
+import game_dev from './game_dev.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
@@ -35,6 +36,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import Backend from './Backend.png'
+import level_design from './Level_design.png';
+import open_source from './open_source.png';
 
 export const assets = {
     user_image,
@@ -73,7 +77,11 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    game_dev,
+    open_source,
+    level_design,
+    Backend
 };
 
 export const workData = [
@@ -129,25 +137,25 @@ export const workData = [
 
 export const serviceData = [
     { 
-        icon: assets.web_icon, 
+        icon: assets.game_dev, 
         title: 'Game Development', 
         description: 'Developing engaging games using Unity and Unreal Engine, focusing on gameplay mechanics and player experience...', 
         link: 'https://docs.unity3d.com/Manual/index.html' 
     },
     { 
-        icon: assets.mobile_icon, 
+        icon: assets.Backend, 
         title: 'Backend Development', 
         description: 'Creating scalable backend systems with Node.js, handling API development and database management...', 
         link: 'https://nodejs.org/en/docs/' 
     },
     { 
-        icon: assets.ui_icon, 
+        icon: assets.level_design, 
         title: 'Game Level Design & Content Creation', 
         description: 'Designing immersive game levels and creating engaging content for interactive experiences...', 
         link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
     },
     { 
-        icon: assets.graphics_icon, 
+        icon: assets.open_source, 
         title: 'Open Source Contributions', 
         description: 'Contributing to open-source projects, sharing knowledge, and collaborating with developers...', 
         link: 'https://opensource.guide/' 
