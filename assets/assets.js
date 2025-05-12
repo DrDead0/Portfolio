@@ -41,10 +41,10 @@ import level_design from './Level_design.png';
 import open_source from './open_source.png';
 import unreal_engine from './unreal_engine.png';
 import unity from  './unity.png';
-// import postman from '';
-// import sql from '';
-// import blender from '';
-// import photoshop from '';
+import blender from './blender.png';
+import sql from './mysql.png';
+import postman from './postman.png';
+import photoshop from './photoshop.png';
 
 
 export const assets = {
@@ -90,7 +90,11 @@ export const assets = {
     level_design,
     Backend,
     unreal_engine,
-    unity
+    unity,
+    blender,
+    sql,
+    photoshop,
+    postman
 };
 
 export const workData = [
@@ -183,5 +187,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.unreal_engine, assets.unity, assets.vscode, assets.figma, assets.git, assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.unreal_engine, assets.unity, assets.vscode, assets.git, assets.mongodb, assets.blender, assets.postman, assets.sql, assets.figma, assets.photoshop
 ];
