@@ -49,7 +49,7 @@ const About = ({isDarkMode}) => {
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 1}}
                 className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mb-4 sm:mb-6'>
-                    {infoList.map(({icon, iconDark, title, description}, index)=>(
+                    {infoList.map(({icon, iconDark, title, description,about}, index)=>(
                         <motion.li 
                         whileHover={{scale: 1.05}}
                         className='border-[0.5px] border-gray-400 rounded-xl p-2 sm:p-3 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-sm'
@@ -64,6 +64,7 @@ const About = ({isDarkMode}) => {
                                     </span>
                                 ))}
                             </p>
+                            <p className='my-1  text-gray-700 dark:text-white text-base sm:text-sm'>{about}</p>
                         </motion.li>
                     ))}
                 </motion.ul>

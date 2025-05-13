@@ -182,7 +182,7 @@ export const infoList = [
         title: 'Tech Stack', 
         description: 'Game Dev: Unity, Unreal Engine, C#, C++\nBackend: Node.js, Express, MongoDB\nWeb: JavaScript, TypeScript, React' 
     },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science', about:"Vellore Institute of Technology " },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: '8+ completed projects including games and web applications' }
 ];
 
