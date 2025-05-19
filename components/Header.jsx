@@ -87,8 +87,8 @@ const Header = () => {
                 key={i}
                 className="absolute w-1.5 h-1.5 bg-white rounded-full"
                 style={{
-                  top: `${Math.sin(i * Math.PI / 3) * 50 + 50}%`,
-                  left: `${Math.cos(i * Math.PI / 3) * 50 + 50}%`,
+                  top: `${(Math.sin(i * Math.PI / 3) * 50 + 50).toFixed(2)}%`,
+                  left: `${(Math.cos(i * Math.PI / 3) * 50 + 50).toFixed(2)}%`,
                 }}
                 animate={{
                   scale: [1, 1.5, 1],
@@ -120,7 +120,13 @@ const Header = () => {
                 ease: "easeInOut",
               }}
             />
-            <Image src={assets.profile_img} alt='' className='rounded-full w-44 relative z-10'/>
+            <Image 
+              src={assets.profile_img} 
+              alt='' 
+              className='rounded-full w-44 relative z-10'
+              style={{ color: 'transparent' }}
+              priority
+            />
           </div>
         </div>
       </motion.div>
@@ -133,7 +139,12 @@ const Header = () => {
             Hi! I'm Ashish Chaurasiya <motion.div
               animate={{ rotate: [0, 20, 0, -20, 0] }}
               transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
-            ><Image src={assets.hand_icon} alt='' className='w-6'/></motion.div></motion.h3>
+            ><Image 
+              src={assets.hand_icon} 
+              alt='' 
+              className='w-6'
+              style={{ color: 'transparent' }}
+            /></motion.div></motion.h3>
       <motion.h1 
         initial={{y: -30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
@@ -163,7 +174,12 @@ const Header = () => {
           Contact Me <motion.div
             animate={{ x: [0, 5, 0] }}
             transition={{ duration: 1, repeat: Infinity }}
-          ><Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.div>
+          ><Image 
+            src={assets.right_arrow_white} 
+            alt='' 
+            className='w-4'
+            style={{ color: 'transparent' }}
+          /></motion.div>
         </motion.a>
 
         <motion.a 
@@ -178,7 +194,12 @@ const Header = () => {
           My Resume <motion.div
             animate={{ y: [0, 3, 0] }}
             transition={{ duration: 1, repeat: Infinity }}
-          ><Image src={assets.download_icon} alt='' className='w-4'/></motion.div>
+          ><Image 
+            src={assets.download_icon} 
+            alt='' 
+            className='w-4'
+            style={{ color: 'transparent' }}
+          /></motion.div>
         </motion.a>
       </div>
 
