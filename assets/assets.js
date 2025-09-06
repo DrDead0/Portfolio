@@ -163,13 +163,13 @@ export const serviceData = [
     },
     { 
         icon: assets.level_design, 
-        title: 'Game Level Design & Content Creation', 
+        title: 'Game Level Design ', 
         description: 'Designing immersive game levels and creating engaging content for interactive experiences...', 
         link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
     },
     { 
         icon: assets.open_source, 
-        title: 'Open Source Contributions', 
+        title: 'Game Content Creation', 
         description: 'Contributing to open-source projects, sharing knowledge, and collaborating with developers...', 
         link: 'https://opensource.guide/' 
     },
