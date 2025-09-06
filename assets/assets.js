@@ -153,24 +153,32 @@ export const serviceData = [
         icon: assets.game_dev, 
         title: 'Game Development', 
         description: 'Developing engaging games using Unity and Unreal Engine, focusing on gameplay mechanics and player experience...', 
+        detailedDescription: 'I specialize in creating immersive gaming experiences using Unity and Unreal Engine. My expertise includes 2D and 3D game development, character animation, physics systems, and gameplay mechanics. I work on everything from indie games to complex multiplayer experiences, ensuring smooth performance and engaging gameplay. Services include game concept development, prototyping, full game development, and optimization for various platforms including PC, mobile, and console.',
+        technologies: ['Unity', 'Unreal Engine', 'C#', 'C++', 'Game Design', 'Animation', 'Physics'],
         link: 'https://docs.unity3d.com/Manual/index.html' 
     },
     { 
         icon: assets.Backend, 
         title: 'Backend Development', 
         description: 'Creating scalable backend systems with Node.js, handling API development and database management...', 
+        detailedDescription: 'I build robust and scalable backend systems using modern technologies like Node.js, Express, and various databases. My services include RESTful API development, real-time applications with WebSocket, database design and optimization, authentication systems, and cloud deployment. I focus on creating secure, performant, and maintainable backend architectures that can handle high traffic and scale with your business needs.',
+        technologies: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'JWT', 'WebSocket', 'AWS', 'Docker'],
         link: 'https://nodejs.org/en/docs/' 
     },
     { 
         icon: assets.level_design, 
-        title: 'Game Level Design ', 
+        title: 'Game Level Design', 
         description: 'Designing immersive game levels and creating engaging content for interactive experiences...', 
+        detailedDescription: 'I create compelling game levels and environments that enhance player engagement and storytelling. My level design services include 3D environment modeling, lighting and atmosphere design, gameplay flow optimization, and interactive element placement. I use tools like Blender, Unity, and Unreal Engine to create detailed, immersive worlds that guide players through memorable experiences while maintaining optimal performance.',
+        technologies: ['Blender', 'Unity', 'Unreal Engine', '3D Modeling', 'Lighting', 'Environment Design', 'Gameplay Flow'],
         link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
     },
     { 
         icon: assets.open_source, 
         title: 'End-to-End Product Development', 
         description: 'Managing the full cycle of development — planning, coding, testing, and delivering production-ready projects....', 
+        detailedDescription: 'I provide complete end-to-end product development services, taking your idea from concept to production. This includes project planning, architecture design, frontend and backend development, testing, deployment, and ongoing maintenance. I work with modern web technologies and follow best practices to ensure your product is scalable, secure, and user-friendly. My approach includes agile development methodologies and continuous integration for efficient project delivery.',
+        technologies: ['Full Stack Development', 'Project Management', 'DevOps', 'Testing', 'Deployment', 'Maintenance', 'Agile'],
         link: 'https://opensource.guide/' 
     },
 ];
