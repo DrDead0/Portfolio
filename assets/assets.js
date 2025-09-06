@@ -169,8 +169,8 @@ export const serviceData = [
     },
     { 
         icon: assets.open_source, 
-        title: 'Game Content Creation', 
-        description: 'Contributing to open-source projects, sharing knowledge, and collaborating with developers...', 
+        title: 'End-to-End Product Development', 
+        description: 'Managing the full cycle of development — planning, coding, testing, and delivering production-ready projects....', 
         link: 'https://opensource.guide/' 
     },
 ];

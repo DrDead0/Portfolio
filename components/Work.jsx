@@ -47,7 +47,11 @@ const Work = ({isDarkMode}) => {
             transition={{ duration: 0.3 }}
             key={index}
             className='aspect-square rounded-xl relative cursor-pointer group overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg hover:shadow-xl'
-            onClick={() => window.open(project.link, '_blank')}>
+            onClick={() => {
+              if (typeof window !== 'undefined') {
+                window.open(project.link, '_blank');
+              }
+            }}>
                 <div className='relative w-full h-full'>
                     <Image 
                         src={project.bgImage} 
@@ -91,3 +95,4 @@ const Work = ({isDarkMode}) => {
 }
 
 export default Work
+

@@ -3,12 +3,12 @@ import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import { motion } from "motion/react"
 
-const Header = () => {
+const Header = ({isDarkMode}) => {
   const headerRef = useRef(null);
 
   useEffect(() => {
     const adjustHeaderHeight = () => {
-      if (headerRef.current) {
+      if (headerRef.current && typeof window !== 'undefined') {
         const navbarHeight = 80;
         const windowHeight = window.innerHeight;
         const contentHeight = headerRef.current.scrollHeight;
@@ -21,9 +21,11 @@ const Header = () => {
       }
     };
 
-    adjustHeaderHeight();
-    window.addEventListener('resize', adjustHeaderHeight);
-    return () => window.removeEventListener('resize', adjustHeaderHeight);
+    if (typeof window !== 'undefined') {
+      adjustHeaderHeight();
+      window.addEventListener('resize', adjustHeaderHeight);
+      return () => window.removeEventListener('resize', adjustHeaderHeight);
+    }
   }, []);
 
   return (
