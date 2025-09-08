@@ -45,6 +45,7 @@ import blender from './blender.png';
 import sql from './mysql.png';
 import postman from './postman.png';
 import photoshop from './photoshop.png';
+import EndToEnd_dev from './EndToEnd_dev.png';
 
 
 export const assets = {
@@ -94,7 +95,8 @@ export const assets = {
     blender,
     sql,
     photoshop,
-    postman
+    postman,
+    EndToEnd_dev
 };
 
 export const workData = [
@@ -174,7 +176,7 @@ export const serviceData = [
         link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
     },
     { 
-        icon: assets.open_source, 
+        icon: assets.EndToEnd_dev, 
         title: 'End-to-End Product Development', 
         description: 'Managing the full cycle of development — planning, coding, testing, and delivering production-ready projects....', 
         detailedDescription: 'I provide complete end-to-end product development services, taking your idea from concept to production. This includes project planning, architecture design, frontend and backend development, testing, deployment, and ongoing maintenance. I work with modern web technologies and follow best practices to ensure your product is scalable, secure, and user-friendly. My approach includes agile development methodologies and continuous integration for efficient project delivery.',
