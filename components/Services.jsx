@@ -116,7 +116,7 @@ const Services = ({isDarkMode}) => {
                       {selectedService.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className='px-3 py-1 bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white rounded-full text-sm font-medium border border-gray-200 dark:border-white/10'
+                          className='px-3 py-1 rounded-full text-sm font-semibold border bg-blue-100/80 text-blue-800 border-blue-200 dark:bg-blue-500/15 dark:text-blue-200 dark:border-blue-500/30 shadow-sm'
                         >
                           {tech}
                         </span>
