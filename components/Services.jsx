@@ -52,7 +52,7 @@ const Services = ({isDarkMode}) => {
                 <motion.div 
                 whileHover={{scale: 1.05}}
                 key={index}
-                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
+                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white astro-hover-card'>
                     <Image src={service.icon} alt='' className='w-10'/>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{service.title}</h3>
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80 line-clamp-3'>
@@ -60,7 +60,7 @@ const Services = ({isDarkMode}) => {
                     </p>
                     <button 
                       onClick={() => openModal(service)}
-                      className='flex items-center gap-2 text-sm mt-5 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300'>
+                      className='flex items-center gap-2 text-sm mt-5 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300 astro-hover-link'>
                         Read more <Image alt='' src={assets.right_arrow} className='w-4'/>
                     </button>
                 </motion.div>
