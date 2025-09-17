@@ -90,11 +90,26 @@ const Contact = ({isDarkMode}) => {
         className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' name='message'></motion.textarea>
 
         <motion.button
-        whileHover={{ scale: 1.05 }} 
-        transition={{ duration: 0.3 }}
-        type='submit'
-        className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
-        >Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.button>
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+          type='submit'
+          className={`hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400 mx-auto
+            ${isDarkMode ? 'bg-transparent text-white hover:bg-purple-700/20 hover:text-purple-200' : 'bg-white text-black hover:bg-purple-100 hover:text-purple-700'}`}
+        >
+          Submit now
+          <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='' className='w-3'/>
+        </motion.button>
+        {/* Mobile/Tablet button style for consistency */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+          type='submit'
+          className={`flex lg:hidden items-center gap-3 px-8 py-3 border border-gray-500 rounded-full font-Ovo dark:border-white/50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-purple-400 mx-auto mt-4
+            ${isDarkMode ? 'bg-transparent text-white hover:bg-purple-700/20 hover:text-purple-200' : 'bg-white text-black hover:bg-purple-100 hover:text-purple-700'}`}
+        >
+          Submit now
+          <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='' className='w-3'/>
+        </motion.button>
 
         <p className='mt-4'>{result}</p>
       </motion.form>

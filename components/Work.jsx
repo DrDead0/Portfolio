@@ -41,41 +41,48 @@ const Work = ({isDarkMode}) => {
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.9, duration: 0.6 }}
     className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10 gap-6 dark:text-black'>
-        {displayedProjects.map((project, index)=>(
-            <motion.div
-            whileHover={{ scale: 1.02, y: -5 }}
-            transition={{ duration: 0.3 }}
-            key={index}
-            className='aspect-square rounded-xl relative cursor-pointer group overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg hover:shadow-xl astro-hover-card'
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.open(project.link, '_blank');
-              }
-            }}>
-                <div className='relative w-full h-full'>
-                    <Image 
-                        src={project.bgImage} 
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        className='object-cover object-center transform group-hover:scale-110 transition-transform duration-500'
-                        quality={100}
-                        priority={index < 4}
-                        loading={index < 4 ? "eager" : "lazy"}
-                    />
-                    <div className='absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300'></div>
-                </div>
-                <div className='bg-white/95 backdrop-blur-sm w-11/12 rounded-lg absolute bottom-4 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between duration-500 group-hover:bottom-6 shadow-lg'>
-                    <div className='flex-1 mr-2'>
-                        <h2 className='font-semibold text-gray-800'>{project.title}</h2>
-                        <p className='text-sm text-gray-600 line-clamp-2'>{project.description}</p>
-                    </div>
-                    <div className='border rounded-full border-gray-800 w-8 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition-colors duration-300 flex-shrink-0'>
-                        <Image src={assets.send_icon} alt='send icon' className='w-4'/>
-                    </div>
-                </div>
-            </motion.div>
-        ))}
+    {displayedProjects.map((project, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ 
+          scale: 1.05, 
+          y: -8,
+          boxShadow: isDarkMode 
+            ? '0 20px 40px 0 rgba(138,43,226,0.3), 0 0 0 1px rgba(138,43,226,0.15)' 
+            : '0 20px 40px 0 rgba(138,43,226,0.2), 0 0 0 1px rgba(138,43,226,0.1)'
+        }}
+        transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+        className='aspect-square rounded-xl relative cursor-pointer group overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg hover:shadow-2xl dark:shadow-gray-900/50 dark:hover:shadow-purple-500/25 duration-500'
+        onClick={() => {
+        if (typeof window !== 'undefined') {
+          window.open(project.link, '_blank');
+        }
+        }}>
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{background: 'radial-gradient(circle at 70% 30%, #8a2be2 0%, transparent 70%)'}} />
+        <div className='relative w-full h-full z-10'>
+          <Image 
+            src={project.bgImage} 
+            alt={project.title}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className='object-cover object-center transform group-hover:scale-110 transition-transform duration-500'
+            quality={100}
+            priority={index < 4}
+            loading={index < 4 ? "eager" : "lazy"}
+          />
+          <div className='absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300'></div>
+        </div>
+        <div className='bg-white/95 backdrop-blur-sm w-11/12 rounded-lg absolute bottom-4 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between duration-500 group-hover:bottom-6 shadow-lg z-20'>
+          <div className='flex-1 mr-2'>
+            <h2 className='font-semibold text-gray-800'>{project.title}</h2>
+            <p className='text-sm text-gray-600 line-clamp-2'>{project.description}</p>
+          </div>
+          <div className='border rounded-full border-gray-800 w-8 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition-colors duration-300 flex-shrink-0'>
+            <Image src={assets.send_icon} alt='send icon' className='w-4'/>
+          </div>
+        </div>
+      </motion.div>
+    ))}
     </motion.div>
 
     {workData.length > 4 && (

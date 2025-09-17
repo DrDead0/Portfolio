@@ -8,27 +8,27 @@ const About = ({isDarkMode}) => {
     <motion.div id='about' className='w-full px-4 sm:px-6 md:px-[8%] lg:px-[12%] py-8 scroll-mt-20'
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
-    transition={{duration: 1}}
+    transition={{duration: 0.4}}
     >
-      <motion.h4 
-      initial={{opacity: 0, y: -20}}
-      whileInView={{opacity: 1, y: 0}}
-      transition={{duration: 0.5, delay: 0.3}}
-      className='text-center mb-1 text-base sm:text-lg font-Ovo'>
+    <motion.h4 
+    initial={{opacity: 0, y: -20}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 0.25, delay: 0.1}}
+    className='text-center mb-1 text-base sm:text-lg font-Ovo'>
         Introduction</motion.h4>
 
-      <motion.h2 
-      initial={{opacity: 0, y: -20}}
-      whileInView={{opacity: 1, y: 0}}
-      transition={{duration: 0.5, delay: 0.5}}
-      className='text-center text-3xl sm:text-4xl md:text-5xl mb-6 font-Ovo'>
+    <motion.h2 
+    initial={{opacity: 0, y: -20}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 0.25, delay: 0.15}}
+    className='text-center text-3xl sm:text-4xl md:text-5xl mb-6 font-Ovo'>
         About me</motion.h2>
 
-        <motion.div 
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 0.8}}
-        className='flex w-full flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-8 -mt-8 sm:-mt-12'>
+    <motion.div 
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 0.3}}
+    className='flex w-full flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-8 -mt-8 sm:-mt-12'>
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
@@ -49,14 +49,22 @@ const About = ({isDarkMode}) => {
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 1}}
                 className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-2xl mb-4 sm:mb-6'>
-                    {infoList.map(({icon, iconDark, title, description,about}, index)=>(
+                    {infoList.map(({icon, iconDark, title, description,about}, index) => (
                         <motion.li 
-                        whileHover={{scale: 1.05}}
-                        className='border-[0.5px] border-gray-400 rounded-xl p-2 sm:p-3 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-sm'
-                         key={index}>
-                            <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-6 sm:w-7 mt-0.5'/>
-                            <h3 className='my-1 font-semibold text-gray-700 dark:text-white text-base sm:text-lg'>{title}</h3>
-                            <p className='text-gray-600 text-xs sm:text-sm dark:text-white/80 leading-relaxed whitespace-pre-line'>
+                          key={index}
+                          whileHover={{ 
+                            scale: 1.02, 
+                            y: -4,
+                            boxShadow: isDarkMode 
+                              ? '0 10px 22px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.05)'
+                              : '0 8px 18px rgba(0,0,0,0.06)'
+                          }}
+                          transition={{ type: 'spring', stiffness: 220, damping: 18 }}
+                          className='border border-gray-200 dark:border-gray-600 rounded-xl p-2 sm:p-3 cursor-pointer bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-900/90 backdrop-blur-sm shadow-sm duration-300 ease-out relative overflow-hidden group'>
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-25 transition-opacity duration-300 pointer-events-none" style={{background: 'radial-gradient(circle at 70% 30%, rgba(138,43,226,0.18) 0%, transparent 70%)'}} />
+                            <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-6 sm:w-7 mt-0.5 relative z-10'/>
+                            <h3 className='my-1 font-semibold text-gray-700 dark:text-white text-base sm:text-lg relative z-10'>{title}</h3>
+                            <p className='text-gray-600 text-xs sm:text-sm dark:text-white/80 leading-relaxed whitespace-pre-line relative z-10'>
                                 {description.split('\n').map((line, index) => (
                                     <span key={index} className='block mb-0.5'>
                                         <span className='font-semibold text-gray-700 dark:text-white'>{line.split(':')[0]}:</span>
@@ -64,7 +72,7 @@ const About = ({isDarkMode}) => {
                                     </span>
                                 ))}
                             </p>
-                            <p className='my-1  text-gray-700 dark:text-white text-base sm:text-sm'>{about}</p>
+                            <p className='my-1  text-gray-700 dark:text-white text-base sm:text-sm relative z-10'>{about}</p>
                         </motion.li>
                     ))}
                 </motion.ul>
