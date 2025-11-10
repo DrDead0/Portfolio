@@ -113,10 +113,10 @@ export const workData = [
         link: 'https://github.com/DrDead0/Task-Manager_Chrome-Extension.git'
     },
     {
-        title: 'Digital Dynasty',
+        title: 'Haunted Quest',
         description: '2D Platformer Game',
         bgImage: '/work-3.png',
-        link: 'https://github.com/DrDead0/Digital-Dynasty_Unity-Engine.git'
+        link: 'https://github.com/DrDead0/Haunted-Quest.git'
     },
     {
         title: 'Urban Eye',
