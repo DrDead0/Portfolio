@@ -190,7 +190,7 @@ const Header = ({isDarkMode}) => {
           transition={{duration: 0.5, delay: 0.6}}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="/sample-resume.pdf" download 
+          href="/Resume.pdf" download 
           className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:bg-gray-100 dark:hover:bg-gray-100 transition-colors duration-300 astro-hover-button'
         >
           My Resume <motion.div
