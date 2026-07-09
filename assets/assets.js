@@ -1,15 +1,6 @@
 import user_image from './user-image.png';
-import code_icon from './code-icon.png';
-import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -39,12 +30,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import Backend from './Backend.png'
 import level_design from './Level_design.png';
 import open_source from './open_source.png';
-import unreal_engine from './unreal_engine.png';
-import unity from  './unity.png';
-import blender from './blender.png';
-import sql from './mysql.png';
-import postman from './postman.png';
-import photoshop from './photoshop.png';
+
 import EndToEnd_dev from './EndToEnd_dev.png';
 
 // New SVG icons
@@ -83,17 +69,8 @@ import threejs_svg from './threejs.svg';
 
 export const assets = {
     user_image,
-    code_icon,
-    code_icon_dark,
     edu_icon,
     edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
     right_arrow_white,
     logo,
     logo_dark,
@@ -123,12 +100,7 @@ export const assets = {
     open_source,
     level_design,
     Backend,
-    unreal_engine,
-    unity,
-    blender,
-    sql,
-    photoshop,
-    postman,
+
     EndToEnd_dev,
     unreal_svg, unity_svg, gin_svg, nodejs_svg, express_svg, nextjs_svg, mongodb_svg, postgres_svg, mysql_svg, redis_svg, prisma_svg, rabbitmq_svg, docker_svg, kubernetes_svg, aws_svg, gcp_svg, vercel_svg, go_svg, ts_svg, js_svg, cpp_svg, cs_svg, c_svg, py_svg, git_svg, github_svg, postman_svg, jenkins_svg, blender_svg, html_svg, css_svg, threejs_svg
 };
