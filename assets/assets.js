@@ -47,6 +47,39 @@ import postman from './postman.png';
 import photoshop from './photoshop.png';
 import EndToEnd_dev from './EndToEnd_dev.png';
 
+// New SVG icons
+import unreal_svg from './unreal.svg';
+import unity_svg from './unity.svg';
+import gin_svg from './gin.svg';
+import nodejs_svg from './nodejs.svg';
+import express_svg from './express.svg';
+import nextjs_svg from './nextjs.svg';
+import mongodb_svg from './mongodb.svg';
+import postgres_svg from './postgres.svg';
+import mysql_svg from './mysql.svg';
+import redis_svg from './redis.svg';
+import prisma_svg from './prisma.svg';
+import rabbitmq_svg from './rabbitmq.svg';
+import docker_svg from './docker.svg';
+import kubernetes_svg from './kubernetes.svg';
+import aws_svg from './aws.svg';
+import gcp_svg from './gcp.svg';
+import vercel_svg from './vercel.svg';
+import go_svg from './go.svg';
+import ts_svg from './ts.svg';
+import js_svg from './js.svg';
+import cpp_svg from './cpp.svg';
+import cs_svg from './cs.svg';
+import c_svg from './c.svg';
+import py_svg from './py.svg';
+import git_svg from './git.svg';
+import github_svg from './github.svg';
+import postman_svg from './postman.svg';
+import jenkins_svg from './jenkins.svg';
+import blender_svg from './blender.svg';
+import html_svg from './html.svg';
+import css_svg from './css.svg';
+import threejs_svg from './threejs.svg';
 
 export const assets = {
     user_image,
@@ -96,7 +129,8 @@ export const assets = {
     sql,
     photoshop,
     postman,
-    EndToEnd_dev
+    EndToEnd_dev,
+    unreal_svg, unity_svg, gin_svg, nodejs_svg, express_svg, nextjs_svg, mongodb_svg, postgres_svg, mysql_svg, redis_svg, prisma_svg, rabbitmq_svg, docker_svg, kubernetes_svg, aws_svg, gcp_svg, vercel_svg, go_svg, ts_svg, js_svg, cpp_svg, cs_svg, c_svg, py_svg, git_svg, github_svg, postman_svg, jenkins_svg, blender_svg, html_svg, css_svg, threejs_svg
 };
 
 export const workData = [
@@ -186,16 +220,9 @@ export const serviceData = [
 ];
 
 export const infoList = [
-    { 
-        icon: assets.code_icon, 
-        iconDark: assets.code_icon_dark, 
-        title: 'Tech Stack', 
-        description: 'Game Dev: Unity, Unreal Engine, C#, C++\nBackend: Node.js, Express, MongoDB\nWeb: JavaScript, TypeScript, React' 
-    },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science', about:"Vellore Institute of Technology " },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: '8+ completed projects including games and web applications' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science', about:"Vellore Institute of Technology " }
 ];
 
 export const toolsData = [
-    assets.unreal_engine, assets.unity, assets.vscode, assets.git, assets.mongodb, assets.blender, assets.postman, assets.sql, assets.figma, assets.photoshop
+    assets.unreal_svg, assets.unity_svg, assets.gin_svg, assets.nodejs_svg, assets.express_svg, assets.nextjs_svg, assets.mongodb_svg, assets.postgres_svg, assets.mysql_svg, assets.redis_svg, assets.prisma_svg, assets.rabbitmq_svg, assets.docker_svg, assets.kubernetes_svg, assets.aws_svg, assets.gcp_svg, assets.vercel_svg, assets.go_svg, assets.ts_svg, assets.js_svg, assets.cpp_svg, assets.cs_svg, assets.c_svg, assets.py_svg, assets.git_svg, assets.github_svg, assets.postman_svg, assets.jenkins_svg, assets.blender_svg, assets.html_svg, assets.css_svg, assets.threejs_svg
 ];
