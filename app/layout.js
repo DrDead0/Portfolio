@@ -14,7 +14,7 @@ const ovo = Ovo({
 
 export const metadata = {
   title: "Ashish Chaurasiya",
-  description: "Game & Backend Developer From Uttar Pradesh, India doing Multiple Things Like Game Development, Backend Development, and also Open Source Contributor.",
+  description: "System & Backend Developer from Uttar Pradesh, India specializing in Backend Systems, Game Servers, and Agile Development.",
 };
 
 export default function RootLayout({ children }) {

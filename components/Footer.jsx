@@ -18,7 +18,7 @@ const Footer = ({isDarkMode}) => {
         <p>© 2025 Ashish Chaurasiya. All rights reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
             <li><a target='_blank' href="https://github.com/DrDead0">GitHub</a></li>
-            <li><a target='_blank' href="https://www.linkedin.com/in/ashish-gamedev/">LinkedIn</a></li>
+            <li><a target='_blank' href="https://www.linkedin.com/in/ashishsystem/">LinkedIn</a></li>
             <li><a target='_blank' href="https://www.instagram.com/a.shiss.h">Instagram</a></li>
             <li><a target='_blank' href="https://x.com/I_Am_Mr_Ashu">Twitter</a></li>
         </ul>

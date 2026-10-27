@@ -30,8 +30,10 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import Backend from './Backend.png'
 import level_design from './Level_design.png';
 import open_source from './open_source.png';
-
 import EndToEnd_dev from './EndToEnd_dev.png';
+import system_dev from './system_dev.png';
+import game_server from './game_server.png';
+import agile_dev from './agile_dev.png';
 
 // New SVG icons
 import unreal_svg from './unreal.svg';
@@ -102,27 +104,24 @@ export const assets = {
     Backend,
 
     EndToEnd_dev,
+    system_dev,
+    game_server,
+    agile_dev,
     unreal_svg, unity_svg, gin_svg, nodejs_svg, express_svg, nextjs_svg, mongodb_svg, postgres_svg, mysql_svg, redis_svg, prisma_svg, rabbitmq_svg, docker_svg, kubernetes_svg, aws_svg, gcp_svg, vercel_svg, go_svg, ts_svg, js_svg, cpp_svg, cs_svg, c_svg, py_svg, git_svg, github_svg, postman_svg, jenkins_svg, blender_svg, html_svg, css_svg, threejs_svg
 };
 
 export const workData = [
     {
-        title: 'Backend',
-        description: 'Social Media Backend',
-        bgImage: '/work-1.png',
-        link: 'https://github.com/DrDead0/Nodejs-Express_SocialMedia_Backend.git'
+        title: 'HaloMail',
+        description: 'API-First Forms & Scheduling Platform',
+        bgImage: '/halomail.png',
+        link: 'https://github.com/zeroaxiis/halomail'
     },
     {
-        title: 'Task Manager',
-        description: 'Chrome Extension',
-        bgImage: '/work-2.png',
-        link: 'https://github.com/DrDead0/Task-Manager_Chrome-Extension.git'
-    },
-    {
-        title: 'Haunted Quest',
-        description: '2D Platformer Game',
-        bgImage: '/work-3.png',
-        link: 'https://github.com/DrDead0/Haunted-Quest.git'
+        title: 'UniGo Delivery',
+        description: 'Campus Food Delivery Platform',
+        bgImage: '/unigo.png',
+        link: 'https://github.com/DrDead0/Unigo_Delivery'
     },
     {
         title: 'Urban Eye',
@@ -131,70 +130,70 @@ export const workData = [
         link: 'https://github.com/DrDead0/urbaneyes.git'
     },
     {
-        title: 'G-Orbit',
-        description: 'Gamers Community Platform',
-        bgImage: '/work-5.png',
-        link: 'https://github.com/DrDead0/G-Orbit_Gaming-Community.git'
+        title: 'Book CLI',
+        description: 'C++23 Unified Terminal Workspace & Tool',
+        bgImage: '/bookcli.png',
+        link: 'https://github.com/DrDead0/Book_CLI'
     },
     {
-        title: 'DarkDeity Bot',
-        description: 'Automated Discord Bot',
-        bgImage: '/work-6.png',
-        link: 'https://github.com/DrDead0/DarkDeity_Bot.git'
+        title: 'Harbour',
+        description: 'C++ Desktop Developer Workspace',
+        bgImage: '/harbour.png',
+        link: 'https://github.com/DrDead0/Harbour'
+    },
+    {
+        title: 'ZeroAxiis Services',
+        description: 'Production Go Microservices Architecture',
+        bgImage: '/work-1.png',
+        link: 'https://github.com/zeroaxiis/ZeroAxiis-Services'
     },
     {
         title: 'CaptainDeity Bot',
         description: 'Automated Discord Moderation Bot',
         bgImage: '/work-7.png',
         link: 'https://github.com/DrDead0/Captain-Deity_Bot.git'
-    },
-    {
-        title: 'Blender Models',
-        description: 'My Blender Collection',
-        bgImage: '/work-8.png',
-        link: 'https://github.com/DrDead0/Blender-Models.git'
     }
 ];
 
 export const serviceData = [
     { 
-        icon: assets.game_dev, 
-        title: 'Game Development', 
-        description: 'Developing engaging games using Unity and Unreal Engine, focusing on gameplay mechanics and player experience...', 
-        detailedDescription: 'I specialize in creating immersive gaming experiences using Unity and Unreal Engine. My expertise includes 2D and 3D game development, character animation, physics systems, and gameplay mechanics. I work on everything from indie games to complex multiplayer experiences, ensuring smooth performance and engaging gameplay. Services include game concept development, prototyping, full game development, and optimization for various platforms including PC, mobile, and console.',
-        technologies: ['Unity','Unreal Engine ','Blueprints','C#','C++' , 'Gameplay Programming' , 'Physics Systems', 'Input & Controls' ,' Animation Integration', 'Asset Integration', 'Performance Optimization'],
-        link: 'https://docs.unity3d.com/Manual/index.html' 
-    },
-    { 
         icon: assets.Backend, 
         title: 'Backend Development', 
-        description: 'Creating scalable backend systems with Node.js, handling API development and database management...', 
-        detailedDescription: 'I build robust and scalable backend systems using modern technologies like Node.js, Express, and various databases. My services include RESTful API development, real-time applications with WebSocket, database design and optimization, authentication systems, and cloud deployment. I focus on creating secure, performant, and maintainable backend architectures that can handle high traffic and scale with your business needs.',
-        technologies: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs' , 'JWT', 'Bcrypt' , 'Multer' , 'Cloudinary' , 'Aggregation Pipelines' , 'Pagination' , 'Docker' , 'AWS' , 'Railway' , 'Postman' , 'Git / GitHub'],
+        description: 'Building high-performance backend systems, designing scalable RESTful APIs, and implementing robust database architectures...', 
+        detailedDescription: 'I build robust and scalable backend systems using modern technologies like Node.js, Express, Go, and various databases. My services include RESTful API development, real-time applications with WebSocket, database design and optimization, authentication systems, and cloud deployment. I focus on creating secure, performant, and maintainable backend architectures that can handle high traffic and scale with your business needs.',
+        technologies: ['Node.js', 'Express.js', 'Go (Gin)', 'MongoDB', 'PostgreSQL', 'Redis', 'REST APIs', 'JWT & Bcrypt', 'Docker', 'AWS', 'RabbitMQ', 'Postman', 'Git / GitHub'],
         link: 'https://nodejs.org/en/docs/' 
     },
     { 
-        icon: assets.level_design, 
-        title: 'Game Level Design & Game Content Creation', 
-        description: 'Designing immersive game levels and creating engaging content for interactive experiences...', 
-        detailedDescription: 'I create compelling game levels and environments that enhance player engagement and storytelling. My level design services include 3D environment modeling, lighting and atmosphere design, gameplay flow optimization, and interactive element placement. I use tools like Blender, Unity, and Unreal Engine to create detailed, immersive worlds that guide players through memorable experiences while maintaining optimal performance.',
-        technologies: ['Twine','Ink','Celtx','Docs','Unity','Unreal','Writing'],
-        link: 'https://docs.unrealengine.com/5.3/en-US/level-design-in-unreal-engine/' 
+        icon: assets.system_dev, 
+        title: 'System Development', 
+        description: 'Developing low-level software, concurrent system architectures, and memory-efficient solutions using C, C++, and Go...', 
+        detailedDescription: 'I develop efficient, low-level systems and high-performance software with languages like C, C++, and Go. My expertise includes multithreading, concurrency patterns, low-latency networking protocols (TCP/UDP, WebSockets), memory management, and system-level performance tuning. Whether building custom network daemons, distributed background workers, or containerized services with Docker and Kubernetes, I prioritize system reliability, hardware efficiency, and deterministic performance.',
+        technologies: ['C', 'C++', 'Go', 'Multithreading', 'Socket Programming', 'TCP/UDP', 'Linux Systems', 'Memory Management', 'Docker', 'Kubernetes', 'GDB', 'Make / CMake'],
+        link: 'https://en.cppreference.com/w/' 
     },
     { 
-        icon: assets.EndToEnd_dev, 
-        title: 'End-to-End Product Development', 
-        description: 'Managing the full cycle of development — planning, coding, testing, and delivering production-ready projects....', 
-        detailedDescription: 'I provide complete end-to-end product development services, taking your idea from concept to production. This includes project planning, architecture design, frontend and backend development, testing, deployment, and ongoing maintenance. I work with modern web technologies and follow best practices to ensure your product is scalable, secure, and user-friendly. My approach includes agile development methodologies and continuous integration for efficient project delivery.',
-        technologies: ['System Design' ,'Testing' , 'Deployment','Containerization' , 'Docker' , 'AWS' , 'Railway' , 'Heroku' , 'Version Control (Git/GitHub)' , 'Postman' , 'Agile'],
-        link: 'https://opensource.guide/' 
+        icon: assets.game_server, 
+        title: 'Game Servers', 
+        description: 'Engineering authoritative real-time multiplayer servers, state synchronization, matchmaking, and low-latency network architectures...', 
+        detailedDescription: 'I architect and build real-time multiplayer game server backends engineered for minimal latency and high concurrency. My focus includes authoritative game loops, entity synchronization, lag compensation techniques, room/lobby management, matchmaking logic, and custom packet serialization over UDP/TCP/WebSockets. With experience bridging low-level protocols and distributed cloud infrastructure, I ensure seamless real-time experiences and cheat-resilient game state handling.',
+        technologies: ['Go', 'C++', 'Node.js', 'WebSockets', 'UDP / TCP', 'Redis Pub/Sub', 'Matchmaking', 'State Synchronization', 'Docker', 'AWS EC2', 'Protobuf'],
+        link: 'https://en.wikipedia.org/wiki/Game_server' 
+    },
+    { 
+        icon: assets.agile_dev, 
+        title: 'Agile Development', 
+        description: 'Driving iterative software lifecycles through Scrum, CI/CD automation, rapid prototyping, and test-driven continuous delivery...', 
+        detailedDescription: 'I apply Agile and DevOps methodologies to deliver high-quality software reliably and adaptively. From backlog grooming and sprint planning to CI/CD pipeline automation and automated testing, I emphasize iterative feedback, modular design, and continuous integration. By utilizing tools like Git, GitHub Actions, Docker, Jenkins, and Postman, I streamline code delivery, minimize technical debt, and ensure team alignment from concept through production.',
+        technologies: ['Agile / Scrum', 'CI/CD Pipelines', 'GitHub Actions', 'Docker', 'Jenkins', 'Automated Testing', 'Git Flow', 'Sprint Planning', 'Postman', 'Code Review & QA'],
+        link: 'https://www.atlassian.com/agile' 
     },
 ];
 
 export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science', about:"Vellore Institute of Technology " }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science & Engineering', about:"Vellore Institute of Technology (VIT)" }
 ];
 
 export const toolsData = [
-    assets.unreal_svg, assets.unity_svg, assets.gin_svg, assets.nodejs_svg, assets.express_svg, assets.nextjs_svg, assets.mongodb_svg, assets.postgres_svg, assets.mysql_svg, assets.redis_svg, assets.prisma_svg, assets.rabbitmq_svg, assets.docker_svg, assets.kubernetes_svg, assets.aws_svg, assets.gcp_svg, assets.vercel_svg, assets.go_svg, assets.ts_svg, assets.js_svg, assets.cpp_svg, assets.cs_svg, assets.c_svg, assets.py_svg, assets.git_svg, assets.github_svg, assets.postman_svg, assets.jenkins_svg, assets.blender_svg, assets.html_svg, assets.css_svg, assets.threejs_svg
+    assets.gin_svg, assets.nodejs_svg, assets.express_svg, assets.nextjs_svg, assets.mongodb_svg, assets.postgres_svg, assets.mysql_svg, assets.redis_svg, assets.prisma_svg, assets.rabbitmq_svg, assets.docker_svg, assets.kubernetes_svg, assets.aws_svg, assets.gcp_svg, assets.vercel_svg, assets.go_svg, assets.ts_svg, assets.js_svg, assets.cpp_svg, assets.cs_svg, assets.c_svg, assets.py_svg, assets.git_svg, assets.github_svg, assets.postman_svg, assets.jenkins_svg, assets.html_svg, assets.css_svg, assets.threejs_svg
 ];

@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1 min-w-0 px-2 sm:px-0'>
                 <p className='mb-3 sm:mb-4 text-sm sm:text-base max-w-2xl font-Ovo'
-                >I am a passionate Game and Backend Developer with a strong interest in creating engaging gameplay and reliable systems. As a student, I actively contribute to open-source projects, constantly learning and improving. I enjoy solving real-world problems through clean code, creativity, and collaboration.</p>
+                >I am a passionate System and Backend Developer with a strong interest in building scalable architectures, low-latency game servers, and reliable backend systems. As a student, I actively contribute to open-source projects, constantly learning and improving. I enjoy solving real-world problems through clean code, system design, and collaboration.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}

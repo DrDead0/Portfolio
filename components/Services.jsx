@@ -40,8 +40,8 @@ const Services = ({isDarkMode}) => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I am a Game & Backend Developer from Uttar Pradesh, India with experience 
-        in Game Development, Backend Systems, and Open Source contributions.</motion.p>
+        I am a System & Backend Developer from Uttar Pradesh, India with experience 
+        in Backend Development, System Architecture, Game Servers, and Agile Methodologies.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
