@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { motion } from "motion/react"
 
 const Work = ({ isDarkMode }) => {
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
   const displayedProjects = showAll ? workData : workData.slice(0, 4);
 
   return (

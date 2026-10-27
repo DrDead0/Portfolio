@@ -34,6 +34,7 @@ import EndToEnd_dev from './EndToEnd_dev.png';
 import system_dev from './system_dev.png';
 import game_server from './game_server.png';
 import agile_dev from './agile_dev.png';
+import microservices from './microservices.png';
 
 // New SVG icons
 import unreal_svg from './unreal.svg';
@@ -50,9 +51,17 @@ import prisma_svg from './prisma.svg';
 import rabbitmq_svg from './rabbitmq.svg';
 import docker_svg from './docker.svg';
 import kubernetes_svg from './kubernetes.svg';
+import nginx_svg from './nginx.svg';
+import prometheus_svg from './prometheus.svg';
+import grafana_svg from './grafana.svg';
+import terraform_svg from './terraform.svg';
 import aws_svg from './aws.svg';
 import gcp_svg from './gcp.svg';
 import vercel_svg from './vercel.svg';
+import jenkins_svg from './jenkins.svg';
+import linux_svg from './linux.svg';
+import bash_svg from './bash.svg';
+import cmake_svg from './cmake.svg';
 import go_svg from './go.svg';
 import ts_svg from './ts.svg';
 import js_svg from './js.svg';
@@ -63,7 +72,6 @@ import py_svg from './py.svg';
 import git_svg from './git.svg';
 import github_svg from './github.svg';
 import postman_svg from './postman.svg';
-import jenkins_svg from './jenkins.svg';
 import blender_svg from './blender.svg';
 import html_svg from './html.svg';
 import css_svg from './css.svg';
@@ -107,6 +115,14 @@ export const assets = {
     system_dev,
     game_server,
     agile_dev,
+    microservices,
+    nginx_svg,
+    prometheus_svg,
+    grafana_svg,
+    terraform_svg,
+    linux_svg,
+    bash_svg,
+    cmake_svg,
     unreal_svg, unity_svg, gin_svg, nodejs_svg, express_svg, nextjs_svg, mongodb_svg, postgres_svg, mysql_svg, redis_svg, prisma_svg, rabbitmq_svg, docker_svg, kubernetes_svg, aws_svg, gcp_svg, vercel_svg, go_svg, ts_svg, js_svg, cpp_svg, cs_svg, c_svg, py_svg, git_svg, github_svg, postman_svg, jenkins_svg, blender_svg, html_svg, css_svg, threejs_svg
 };
 
@@ -142,9 +158,15 @@ export const workData = [
         link: 'https://github.com/DrDead0/Harbour'
     },
     {
+        title: 'ZeroAxiis',
+        description: 'Official Open-Source Initiative & Platform',
+        bgImage: '/zeroaxiis.png',
+        link: 'https://github.com/zeroaxiis/zeroaxiis'
+    },
+    {
         title: 'ZeroAxiis Services',
-        description: 'Production Go Microservices Architecture',
-        bgImage: '/work-1.png',
+        description: 'Production Go & Gin Backend Services',
+        bgImage: '/zeroaxiis_services.png',
         link: 'https://github.com/zeroaxiis/ZeroAxiis-Services'
     },
     {
@@ -173,20 +195,20 @@ export const serviceData = [
         link: 'https://en.cppreference.com/w/' 
     },
     { 
+        icon: assets.microservices, 
+        title: 'Microservices', 
+        description: 'Architecting distributed microservices, event-driven streaming, containerized workloads, and resilient API gateways...', 
+        detailedDescription: 'I architect and develop resilient, high-throughput microservices using Go, Node.js, and Docker. My focus includes decoupled domain-driven design, asynchronous event messaging with RabbitMQ and Redis, API gateway routing, gRPC/Protobuf inter-service communication, distributed tracing, and container orchestration with Docker and Kubernetes. By building isolated, fault-tolerant microservices, I ensure high availability and independent deployment lifecycles.',
+        technologies: ['Go', 'Node.js', 'Docker', 'Kubernetes', 'RabbitMQ', 'Redis', 'gRPC / Protobuf', 'REST APIs', 'Nginx', 'Prometheus', 'Grafana', 'CI/CD'],
+        link: 'https://microservices.io/' 
+    },
+    { 
         icon: assets.game_server, 
         title: 'Game Servers', 
         description: 'Engineering authoritative real-time multiplayer servers, state synchronization, matchmaking, and low-latency network architectures...', 
         detailedDescription: 'I architect and build real-time multiplayer game server backends engineered for minimal latency and high concurrency. My focus includes authoritative game loops, entity synchronization, lag compensation techniques, room/lobby management, matchmaking logic, and custom packet serialization over UDP/TCP/WebSockets. With experience bridging low-level protocols and distributed cloud infrastructure, I ensure seamless real-time experiences and cheat-resilient game state handling.',
         technologies: ['Go', 'C++', 'Node.js', 'WebSockets', 'UDP / TCP', 'Redis Pub/Sub', 'Matchmaking', 'State Synchronization', 'Docker', 'AWS EC2', 'Protobuf'],
         link: 'https://en.wikipedia.org/wiki/Game_server' 
-    },
-    { 
-        icon: assets.agile_dev, 
-        title: 'Agile Development', 
-        description: 'Driving iterative software lifecycles through Scrum, CI/CD automation, rapid prototyping, and test-driven continuous delivery...', 
-        detailedDescription: 'I apply Agile and DevOps methodologies to deliver high-quality software reliably and adaptively. From backlog grooming and sprint planning to CI/CD pipeline automation and automated testing, I emphasize iterative feedback, modular design, and continuous integration. By utilizing tools like Git, GitHub Actions, Docker, Jenkins, and Postman, I streamline code delivery, minimize technical debt, and ensure team alignment from concept through production.',
-        technologies: ['Agile / Scrum', 'CI/CD Pipelines', 'GitHub Actions', 'Docker', 'Jenkins', 'Automated Testing', 'Git Flow', 'Sprint Planning', 'Postman', 'Code Review & QA'],
-        link: 'https://www.atlassian.com/agile' 
     },
 ];
 
@@ -195,5 +217,40 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.gin_svg, assets.nodejs_svg, assets.express_svg, assets.nextjs_svg, assets.mongodb_svg, assets.postgres_svg, assets.mysql_svg, assets.redis_svg, assets.prisma_svg, assets.rabbitmq_svg, assets.docker_svg, assets.kubernetes_svg, assets.aws_svg, assets.gcp_svg, assets.vercel_svg, assets.go_svg, assets.ts_svg, assets.js_svg, assets.cpp_svg, assets.cs_svg, assets.c_svg, assets.py_svg, assets.git_svg, assets.github_svg, assets.postman_svg, assets.jenkins_svg, assets.html_svg, assets.css_svg, assets.threejs_svg
+    assets.gin_svg,
+    assets.nodejs_svg,
+    assets.express_svg,
+    assets.nextjs_svg,
+    assets.mongodb_svg,
+    assets.postgres_svg,
+    assets.mysql_svg,
+    assets.redis_svg,
+    assets.prisma_svg,
+    assets.rabbitmq_svg,
+    assets.docker_svg,
+    assets.kubernetes_svg,
+    assets.nginx_svg,
+    assets.prometheus_svg,
+    assets.grafana_svg,
+    assets.terraform_svg,
+    assets.aws_svg,
+    assets.gcp_svg,
+    assets.vercel_svg,
+    assets.jenkins_svg,
+    assets.linux_svg,
+    assets.bash_svg,
+    assets.cmake_svg,
+    assets.go_svg,
+    assets.ts_svg,
+    assets.js_svg,
+    assets.cpp_svg,
+    assets.cs_svg,
+    assets.c_svg,
+    assets.py_svg,
+    assets.git_svg,
+    assets.github_svg,
+    assets.postman_svg,
+    assets.html_svg,
+    assets.css_svg,
+    assets.threejs_svg
 ];
